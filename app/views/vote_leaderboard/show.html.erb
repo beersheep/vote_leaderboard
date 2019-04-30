@@ -1,9 +1,13 @@
-<h1> Vote Leaderboard </h1>
-<% @sectors.each do |sector| %>
-  <h2> <%= sector.name %> </h2>
-  <div id="<%= sector.name %>">
-    <%= render "sector_vote_count", sector: sector %>
+<h1 class="display-3" style="text-align: center"> Vote Leaderboard </h1>
+<div class="container">
+  <div class="row">
+    <% @sectors.each do |sector| %>
+      <div id="<%= sector.name %>" class="col-6" style="text-align:center">
+        <h2> <%= sector.name %> Sector</h2>
+        <%= render "sector_vote_count", sector: sector %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
 
 <div class="test"></div>

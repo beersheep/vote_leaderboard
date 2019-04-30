@@ -1,9 +1,11 @@
-<table>
-  <tr>
-    <th> Standing </th>
-    <th> Candidate Name </th>
-    <th> Vote Count </th>
-  </tr>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th> # </th>
+      <th> Candidate Name </th>
+      <th> Vote Count </th>
+    </tr>
+  </thead>
 
   <% sector.get_votes.each.with_index(1) do |votes, idx| %>
 
