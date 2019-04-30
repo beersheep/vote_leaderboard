@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th> Standing </th>
+    <th> Candidate Name </th>
+    <th> Vote Count </th>
+  </tr>
+
+  <% sector.get_votes.each.with_index(1) do |votes, idx| %>
+
+    <tr>
+      <td> <%= idx %> </td>
+      <td> <%= votes[0] %> </td>
+      <td> <%= votes[1].to_i %> </td>
+    </tr>
+  <% end %>
+</table>
