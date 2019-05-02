@@ -2,7 +2,6 @@ class VoteCountingJob < ApplicationJob
   queue_as :default
 
   def perform(sector)
-    # Do something later
     ActionCable.server.broadcast("vote_leaderboard_channel", template: render_html(sector), sector_name: sector)
   end
 

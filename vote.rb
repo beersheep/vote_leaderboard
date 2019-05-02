@@ -1,7 +1,6 @@
 require 'net/http'
-require 'pry'
 
-url = URI('http://localhost:3001/votes')
+url = URI('http://localhost:3000/votes')
 
 all_candidates = {
   t1_candidates: ["Kennedy Stewart", 
